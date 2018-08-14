@@ -1,0 +1,8 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar call;
+!slot <directory>;
+!slot <control>;
+!start <callStart>;
+<callStart>:<directory>|<control>;
+<directory>:水平膨胀|垂直膨胀|水平腐蚀|垂直腐蚀|停;
+<control>:爪子合|爪子张|云台正|云台反|大臂抬|大臂降|小臂抬|小臂降;

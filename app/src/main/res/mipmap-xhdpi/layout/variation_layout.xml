@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_variatoin_choose_iamge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择图片"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_variation_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/lazy">
+            </ImageView>
+        </LinearLayout>
+
+        <ExpandableListView
+            android:id="@+id/exlv_variation"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:childDivider="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:groupIndicator="@null">
+
+        </ExpandableListView>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.coolcamera.ContentActivity">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            />
+
+
+    <LinearLayout
+        xmlns:fcf="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="bottom">
+
+        <at.technikum.mti.fancycoverflow.FancyCoverFlow
+            android:id="@+id/fancyCoverFlow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            fcf:maxRotation="45"
+            fcf:unselectedAlpha="0.2"
+            fcf:unselectedSaturation="0.0"
+            fcf:unselectedScale="0.4"
+            fcf:scaleDownGravity="0.7"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

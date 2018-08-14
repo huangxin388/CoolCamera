@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background1"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        >
+        <ImageButton
+            android:id="@+id/main_carema"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@mipmap/camera"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            />
+        <ImageButton
+            android:id="@+id/main_variation"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@mipmap/variation"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            />
+        <ImageButton
+            android:id="@+id/main_jigsaw"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@mipmap/jisaw"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            />
+        <ImageButton
+            android:id="@+id/main_color_change"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@mipmap/portrait"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
